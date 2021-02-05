@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
+  background-color: #e5eff5;
+}
+
+@media (max-width: 639px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+@media (max-width: 639px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+@media (max-width: 639px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  color: white;
+  background-color: #c0df34;
+  padding: 2rem 9rem;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
