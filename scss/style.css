@@ -9,6 +9,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   font-family: "Karla", sans-serif;
   line-height: 1.5;
   background-color: #e5eff5;
+  height: 100vh;
 }
 
 @media (max-width: 639px) {
@@ -57,5 +59,48 @@ a {
   background-color: #c0df34;
   padding: 2rem 9rem;
   border-radius: 5px;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 64rem;
+}
+
+@media (max-width: 639px) {
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.row-1 {
+  background-color: white;
+  padding: 4.5rem 7rem 4.5rem 4rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+@media (max-width: 639px) {
+  .row-1 {
+    padding: 3rem 2.5rem 3.5rem 2.5rem;
+  }
+}
+
+.row-1 h1 {
+  color: #2ab2af;
+  margin-bottom: 2.5rem;
+}
+
+.row-1 h2 {
+  color: #c0df34;
+  margin-bottom: 1.5rem;
+}
+
+.row-1 p {
+  color: #98a6bd;
 }
 /*# sourceMappingURL=style.css.map */
