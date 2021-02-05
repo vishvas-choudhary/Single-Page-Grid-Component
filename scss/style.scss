@@ -33,9 +33,97 @@
   h2 {
     color: $brightYellow;
     margin-bottom: 1.5rem;
+
+    @include breakpoint-down(small) {
+      font-size: 1.6rem;
+    }
   }
 
   p {
     color: $grayishBlue;
   }
+}
+
+.row-2 {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+
+  .col-1 {
+    flex: 1;
+    flex-basis: 30rem;
+    background-color: #2bb3b1;
+    padding: 4rem;
+
+    @include breakpoint-down(small) {
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+
+      @include breakpoint-down(small) {
+        font-size: 2rem;
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+
+      h3 {
+        margin-right: 1.5rem;
+      }
+
+      p {
+        opacity: 0.6;
+      }
+    }
+
+    &__p {
+      margin-bottom: 3rem;
+
+      @include breakpoint-down(small) {
+        font-size: 1.8rem;
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  .col-2 {
+    flex: 1;
+    flex-basis: 30rem;
+    background-color: #4abebd;
+    padding: 4rem;
+
+    @include breakpoint-down(small) {
+      padding: 2rem;
+    }
+
+    h2 {
+      margin-bottom: 2.5rem;
+
+      @include breakpoint-down(small) {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      opacity: 0.7;
+      max-width: 19.45rem;
+    }
+  }
+}
+
+footer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 2%;
 }
